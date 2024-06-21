@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.43.0/web/lr-img.min.js" type="module"></script>
+    <style>
+      lr-img {
+        --lr-img-pubkey: 'dc10a36db143e2574355';
+        --lr-img-breakpoints: '600, 900, 1200';
+        --lr-img-cdn-operations: '-/crop/800x600/1325,1000/';
+      }
+
+      lr-img img {
+        /* width: 100%; */
+        height: auto;
+      }
+
+      #bg-image {
+        background-size: cover;
+        height: 500px;
+        color: #fff;
+        font-size: 50px;
+        background-position: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <lr-img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"></lr-img>
+
+  </body>
+
+</html>
